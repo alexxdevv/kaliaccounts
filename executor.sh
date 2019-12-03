@@ -29,7 +29,7 @@ var2=$(echo $var0 | grep -o 'csrftoken=.*' | cut -d ';' -f1 | cut -d '=' -f2)
 banner() {
 
 printf "\n"
-printf "\e[1;77m\e[41m      Bienvenid@ / Welcome!\e[0m\n"
+printf "\e[1;77m\e[41m  Bienvenid@ / Welcome!\e[0m\n"
 printf "\n"
 printf "\n"
 printf "\n"

@@ -30,6 +30,14 @@ var2=$(echo $var0 | grep -o 'csrftoken=.*' | cut -d ';' -f1 | cut -d '=' -f2)
 
 banner() {
 
+printf "\n"
+printf "\n"
+printf "\n"
+printf "\n"
+printf "\n"
+printf "\n"
+printf "\n"
+printf "\n"
 printf "\e[1;95m Tool básica e intuitiva para el "desencriptamiento"\e[0m\e[1;91m de contraseñas de Instagram\e[0m\n"
 printf "\e[1;95m Usar este bot con razonamiento y bajo el consentimiento del \e[0m\e[1;91m autor de dicho crack\e[0m\n"
 printf "\n"
